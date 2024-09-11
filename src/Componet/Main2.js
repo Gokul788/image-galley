@@ -33,7 +33,7 @@ function Main2(){
           </h3>
         </div>
       </div>
-      <div class="imag-1">
+      <div class="imag-12">
         <div class="content-img">
           <img src={Grizeman} alt="Grizeman" />
           <h3>Antoine Griezmann

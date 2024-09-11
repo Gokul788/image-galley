@@ -34,7 +34,7 @@ function Main(){
         </h3>
       </div>
     </div>
-    <div class="imag-1">
+    <div class="imag-12">
       <div class="content-img">
         <img src={Haaland} alt="Erling Haaland " />
         <h3>Erling Haaland 
