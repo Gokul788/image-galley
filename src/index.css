@@ -1,3 +1,9 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +11,275 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: black;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+.Navbar{
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 1rem 15%;
+  backdrop-filter: blur(12);
+}
+
+.Main{
+  padding: 1rem;
+  background-color: #2C3539;
+  
+}
+.imag-1{
+   background-color: black;
+   width: fit-content;
+   padding: 1.2rem;
+   border-radius: 1rem;
+   
+   
+   
+}
+
+.content-img{
+  transform: scale(1);
+}
+.content-img img{
+  width: 300px;
+  border-radius: 1rem;
+}
+.content-img{
+  color: wheat;
+  text-align: center;
+}
+
+.content-img:hover{
+  transition-duration: 2s;
+  transform: scale(1.04);
+}
+.container-1{
+  display: flex;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  justify-content: space-between;
+  scroll-behavior: auto;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+
+
+.feedback-section {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1400px;
+  margin: 0 auto;
+  background-color:#2C3539;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 10rem;
+  gap: 1rem;
+  align-items: center;
+}
+
+.image-container {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.responsive-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.feedback-container {
+  flex: 2;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color:white;
+}
+
+.feedback-form .form-group {
+  margin-bottom: 15px;
+}
+
+.feedback-form label {
+  display: block;
+  margin-bottom: 5px;
+  color: white;
+  font-size: 16px;
+}
+
+.feedback-form input,
+.feedback-form select,
+.feedback-form textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.feedback-form textarea {
+  resize: none;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #218838;
+}
+.imagesecond{
+  display: none;
+}
+
+/* Footer Styles */
+footer {
+  background-color: black;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 40px 20px;
+  margin-top: 5rem;
+
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin:0  auto;
+  justify-content: center;
+  gap: 1rem;
+  text-align: center;
+  
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 250px;
+  margin-bottom: 20px;
+}
+
+.footer-column h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #ffdd57;
+}
+
+.footer-column p {
+  font-size: 15px;
+  color: #ddd;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  border-top: 1px solid #444;
+  padding-top: 20px;
+}
+
+.footer-bottom p {
+  font-size: 14px;
+  color: #bbb;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .footer-column {
+      text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  footer {
+      padding: 30px 10px;
+  }
+
+  .footer-column h3 {
+      font-size: 16px;
+  }
+
+  .footer-column p {
+      font-size: 14px;
+  }
+
+  .footer-bottom p {
+      font-size: 13px;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .feedback-section {
+      flex-direction: column;
+  }
+
+  .image-container {
+      padding-right: 0;
+      margin-bottom: 20px;
+  }
+
+  h2 {
+      font-size: 22px;
+  }
+
+  .submit-btn {
+      font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+      font-size: 20px;
+  }
+
+  .feedback-form input,
+  .feedback-form select,
+  .feedback-form textarea {
+      font-size: 14px;
+  }
+
+  .submit-btn {
+      font-size: 14px;
+      padding: 10px;
+  }
+}
+
+
+@media screen and (max-width:768px) {
+  .content-img img{
+    width: 250px;
+  }
+}
+@media (min-width: 768px) {
+  .responsive-image{
+    display: none;
+  }
+  .imagesecond{
+    display: flex;
+    width: 100%;
+    height: 600px;
+  }
 }
