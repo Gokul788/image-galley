@@ -53,7 +53,7 @@ body {
 }
 .content-img img{
   width: 250px;
-  border-radius: 1rem;
+  border-radius: .8rem;
 }
 .content-img{
   color: wheat;
